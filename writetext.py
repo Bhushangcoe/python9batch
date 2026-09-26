@@ -1,0 +1,5 @@
+f=open("data.txt","w")
+f.write('hello,welcome to the python file handling\n')
+f.write('python is object oriented prog lang\n')
+f.write('we are writing in text file')
+print('operation done!')

@@ -1,0 +1,1 @@
+f=open('abc1.txt','x')
