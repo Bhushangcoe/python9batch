@@ -1,1 +1,5 @@
-f=open('abc1.txt','x')
+# f=open('abc1.txt','x')
+f=open('abc1.txt','r+')
+print('file content')
+print(f.read())
+f.write('bye')
