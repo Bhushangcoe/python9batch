@@ -1,102 +1,150 @@
-# Python 9 Batch
+# Python 9 Batch Practice Project
 
-This repository contains standalone Python practice examples covering basic conditions, exception handling, text files, CSV files, PDF generation, and MySQL database operations. It is a collection of lessons rather than an installable Python package; run one script at a time from the repository folder.
+This project contains Python practice programs for:
+- basic Python concepts
+- file handling
+- CSV operations
+- PDF reading/writing
+- database connection with MySQL
 
-## Folder Overview
+All scripts are simple learning examples and are meant to be run individually from this folder.
 
-All lesson scripts and their sample data are currently in the repository root. There are no Python package or application source subfolders.
+---
 
-| Entry | Purpose |
-| --- | --- |
-| `.vscode/` | Visual Studio Code workspace settings. `settings.json` selects the Python extension's system environment manager. |
-| `.git/` | Git's internal repository data. It is managed by Git and is not lesson content. |
-| `26.2.1` | Empty file with no extension; currently a placeholder with no documented role. |
-| `9.0.0` | Empty file with no extension; currently a placeholder with no documented role. |
-| `python` | Empty file with no extension; currently a placeholder with no documented role. |
+## 1. Data Connection Files (MySQL / Database)
 
-## Python Examples
+These files connect Python to a MySQL database and perform database operations.
 
-### Basics and Exceptions
+### Database files
+- `data.py` - Creates the MySQL database named `python9`.
+- `createtable.py` - Creates the `employee` table with fields like ID, name, department, and salary.
+- `insertrecord.py` - Inserts sample employee records into the database.
+- `read.py` - Reads and displays records from the database.
+- `selectusingwhere.py` - Uses a `WHERE` query to filter employee data and display matching records.
+- `update.py` - Updates the salary of an employee using the employee ID.
+- `delete.py` - Deletes a selected employee record from the database.
+- `delete_duplicate.py` - Removes duplicate rows from the employee table.
 
-| File | What it demonstrates |
-| --- | --- |
-| `demo.py` | An `if`/`else` condition that checks voting age. |
-| `exceptiondemo.py` | A function, integer input, division, and handling invalid input and division by zero. |
-| `exceptiondemo2.py` | `try`/`except`/`else`/`finally`, string indexing, and string case conversion. |
-| `exceptiondemo3.py` | A broad exception handler around reading a file. It currently tries to open `data.text`; the sample file in this repository is named `data.txt`. |
-| `customeexception.py` | Defines and raises a custom age exception when the entered age is below 16. |
-| `customeexception2.py` | Defines a custom marks exception and checks that marks are between 0 and 100. |
+### Purpose of this section
+These files are used to learn how Python connects with MySQL and performs CRUD operations:
+- Create
+- Read
+- Update
+- Delete
 
-### Text Files
+---
 
-| File | What it demonstrates |
-| --- | --- |
-| `createtext.py` | Opens `abc1.txt` in read/write mode, prints its contents, then writes `bye` at the current file position (after the read). |
-| `readtext.py` | Reads and prints the first 15 characters from `data.txt`. |
-| `writetext.py` | Opens `data.txt` in write mode and writes sample lines. Write mode replaces the existing contents. |
-| `appendtext.py` | Opens `data.txt` in append mode and adds a line without replacing its current contents. |
-| `read.py` | Connects to MySQL and selects employee rows ordered by name; despite its short filename, it is a database example, not a text-file reader. |
+## 2. File Handling Files
 
-### CSV and PDF
+These files are for handling text, CSV, and PDF files.
 
-| File | What it demonstrates |
-| --- | --- |
-| `readcsv.py` | Opens `employee.csv` and creates a CSV reader. The loop that would print rows is commented out, so it currently does not display the records. |
-| `writecsv.py` | Appends several employee rows to `employee.csv`. The `data` list is an example; the active calls write separate rows directly. |
-| `employee.csv` | Sample employee data. It currently contains repeated header rows and employee records. |
-| `pdffilewrite.py` | Uses ReportLab to create `first.pdf` with a short line of text. Running it overwrites that output file. |
-| `first.pdf` | Generated PDF output from `pdffilewrite.py`. |
+### A. Text File Handling
+- `createtext.py` - Creates or opens a text file and demonstrates reading/writing operations.
+- `readtext.py` - Reads data from a text file and prints it.
+- `writetext.py` - Writes content into a text file. It overwrites the file contents.
+- `appendtext.py` - Appends new content to an existing text file without deleting old content.
 
-### MySQL Database
+### B. CSV File Handling
+- `readcsv.py` - Reads records from `employee.csv`.
+- `writecsv.py` - Writes employee data into the CSV file.
+- `employee.csv` - Sample CSV file used for training on comma-separated values.
 
-These scripts use the MySQL Connector/Python package and connect to a local server as `root`. Most expect a database named `python9` and a table named `employee`.
+### C. PDF File Handling
+- `pdffilewrite.py` - Creates a PDF file using the `reportlab` library.
+- `readpdf.py` - Reads text from an existing PDF file.
+- `splitpdf.py` - Splits a PDF into separate page-wise PDF files.
+- `mergepdf.py` - Merges multiple PDF files into one PDF file.
+- `first.pdf` - Sample PDF generated by `pdffilewrite.py`.
+- `second.pdf` - Another sample PDF created by a PDF writing script.
+- `mergepdf.pdf` - Output file created by merging PDFs.
+- `page_1.pdf` - First page extracted from a PDF.
+- `page_2.pdf` - Second page extracted from a PDF.
+- `bhushan-gangurde resume 2026.pdf` - Sample resume PDF used for PDF reading/extraction practice.
 
-| File | What it demonstrates |
-| --- | --- |
-| `data.py` | Connects to the MySQL server and creates the `python9` database. |
-| `createtable.py` | Creates the `employee` table with employee ID, name, department, and salary columns. |
-| `insertrecord.py` | Inserts multiple employee records into the table. |
-| `selectusingwhere.py` | Selects and displays employee records; its active query orders all rows by name. Example `WHERE` queries are commented out. |
-| `update.py` | Prompts for an employee ID and salary, then updates that employee's salary. |
-| `delete.py` | Prompts for an employee ID and deletes the matching record. |
-| `delete_duplicate.py` | Replaces the `employee` table contents with distinct rows to remove exact duplicate records. |
+---
 
-## Setup and Running
+## 3. Basic Python Practice Files
 
-Use Python 3. Install the external packages used by the examples:
+These files are for learning Python basics and exception handling.
+
+- `demo.py` - Basic if/else example.
+- `exceptiondemo.py` - Example of exception handling with arithmetic operations.
+- `exceptiondemo2.py` - Uses `try`, `except`, `else`, and `finally` blocks.
+- `exceptiondemo3.py` - Demonstrates file reading with exception handling.
+- `customeexception.py` - Custom exception for age validation.
+- `customeexception2.py` - Custom exception for marks validation.
+
+---
+
+## 4. Data Files Used in the Project
+
+- `abc.txt` - Sample text file used for text operations.
+- `abc1.txt` - Another sample text file.
+- `data.txt` - Main text file used for reading/writing examples.
+
+---
+
+## 5. Setup Instructions
+
+Install the required libraries:
 
 ```bash
-python -m pip install mysql-connector-python reportlab
+pip install mysql-connector-python reportlab pypdf
 ```
 
-The MySQL examples also require a running local MySQL server. Review the connection settings in each script and use credentials appropriate for your machine. The examples currently contain the username `root` and password `root`; do not use those hard-coded credentials for a real or shared database.
+Make sure:
+- MySQL is installed and running locally.
+- The database username and password in the Python scripts match your MySQL setup.
+- You run the scripts from the project folder so relative file names work correctly.
 
-For a fresh database, run the database examples in this order:
+---
 
-1. `data.py` creates the `python9` database.
-2. `createtable.py` creates the `employee` table.
-3. `insertrecord.py` inserts example records.
-4. Run the select, update, or delete examples as needed.
+## 6. How to Run the Files
 
-Run scripts from this folder so their relative filenames (such as `data.txt`, `employee.csv`, and `first.pdf`) resolve correctly:
-
+### Run a database script
 ```bash
-python demo.py
+python data.py
+python createtable.py
+python insertrecord.py
+```
+
+### Run a text file script
+```bash
+python readtext.py
+python writetext.py
+python appendtext.py
+```
+
+### Run a CSV script
+```bash
 python readcsv.py
+python writecsv.py
 ```
 
-Each script runs its example directly when launched. Several scripts request keyboard input or modify files/database records. In particular, `writetext.py` replaces `data.txt`, `writecsv.py` appends CSV records, and the MySQL update/delete scripts change database data. Review the active statements before running them.
+### Run a PDF script
+```bash
+python pdffilewrite.py
+python readpdf.py
+python splitpdf.py
+python mergepdf.py
+```
 
-## Sample Text and Data Files
+---
 
-| File | Contents or role |
-| --- | --- |
-| `abc.txt` | Empty text file. |
-| `abc1.txt` | Sample text used by `createtext.py`. |
-| `data.txt` | Text-file handling example data; several scripts read, replace, or append to it. |
+## 7. Summary
 
-## Notes
+This repository is a collection of beginner-level Python exercises that cover:
+- database connection
+- file writing and reading
+- CSV handling
+- PDF handling
+- exception handling
+- user-defined exceptions
 
-- `26.2.1`, `9.0.0`, and `python` are zero-byte files with no extension. They are listed here for completeness, but their purpose is not evident from their current contents.
-- The scripts are independent examples and do not share a command-line interface or automated test suite.
-- File operations use paths relative to the current working directory. Start the scripts from this repository folder, or adjust the paths if running them elsewhere.
+The project is designed to help students practice Python in small, easy-to-understand examples.
+
+---
+
+## 8. Important Note
+
+Some files are output files created after running programs, such as PDF files and CSV data. These files may change when you run the scripts again. So always check the code before executing it, especially for scripts that write or overwrite data.

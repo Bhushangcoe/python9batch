@@ -1,4 +1,7 @@
 from reportlab.pdfgen import canvas
-pdf=canvas.Canvas('first.pdf')
-pdf.drawString(10,20,"Welcome to pdf file handling")
+
+pdf = canvas.Canvas('second.pdf')
+pdf.drawString(10, 20, "amir khan ka beta junaid khan ")
 pdf.save()
+
+print('between heaven and hell')
