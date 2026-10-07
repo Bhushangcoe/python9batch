@@ -1,0 +1,16 @@
+import numpy as np
+
+n1=np.array([29,4,5,6,3])
+n2=np.array([12,9,8,4,5])
+print(n1)
+print(n2)
+co=np.concatenate((n1,n2))
+print("concatenate=",co)
+n3=np.stack((n1,n2),axis=1)
+print("stack=",n3)
+vs=np.vstack((n1,n2))
+print("vstack=",vs)
+hs=np.hstack((n1,n2))
+print("hstack=",hs)
+ds=np.array((n1,n2))
+print("dstack=\n",ds)
