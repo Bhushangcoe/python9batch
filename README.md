@@ -63,7 +63,15 @@ These files are for handling text, CSV, and PDF files.
 
 ---
 
-## 3. Basic Python Practice Files
+## 3. NumPy Practice Files
+
+These files demonstrate NumPy arrays, transformations, and random data:
+- `randomnum.py` - Demonstrates generating random integers and arrays, random floats, and weighted or shaped random choices.
+- `filterarray.py` - Demonstrates filtering NumPy arrays with a Boolean mask and a condition-based mask.
+
+---
+
+## 4. Basic Python Practice Files
 
 These files are for learning Python basics and exception handling.
 
@@ -76,7 +84,7 @@ These files are for learning Python basics and exception handling.
 
 ---
 
-## 4. Data Files Used in the Project
+## 5. Data Files Used in the Project
 
 - `abc.txt` - Sample text file used for text operations.
 - `abc1.txt` - Another sample text file.
@@ -84,7 +92,7 @@ These files are for learning Python basics and exception handling.
 
 ---
 
-## 5. Setup Instructions
+## 6. Setup Instructions
 
 Install the required libraries:
 
@@ -99,7 +107,7 @@ Make sure:
 
 ---
 
-## 6. How to Run the Files
+## 7. How to Run the Files
 
 ### Run a database script
 ```bash
@@ -131,7 +139,7 @@ python mergepdf.py
 
 ---
 
-## 7. Summary
+## 8. Summary
 
 This repository is a collection of beginner-level Python exercises that cover:
 - database connection
@@ -145,6 +153,6 @@ The project is designed to help students practice Python in small, easy-to-under
 
 ---
 
-## 8. Important Note
+## 9. Important Note
 
 Some files are output files created after running programs, such as PDF files and CSV data. These files may change when you run the scripts again. So always check the code before executing it, especially for scripts that write or overwrite data.
