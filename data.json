@@ -1,0 +1,23 @@
+{
+  "ID": {
+    "0": "s1",
+    "1": "s2",
+    "2": "s3",
+    "3": "s4",
+    "4": "s5"
+  },
+  "name": {
+    "0": "Example Person 001",
+    "1": "Example Person 002",
+    "2": "Example Person 003",
+    "3": "Example Person 004",
+    "4": "Example Person 005"
+  },
+  "marks": {
+    "0": 78,
+    "1": 90,
+    "2": 70,
+    "3": 80,
+    "4": 60
+  }
+}

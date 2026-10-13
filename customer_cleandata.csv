@@ -1,0 +1,6 @@
+Customer_ID,Name,Age,Gender,Email,Phone,City,Salary,Joining_Date,Department
+201,Example Person 001,25,Other,person201@example.test,0.0,Sample City,45000,15-01-23,IT
+202,Example Person 002,,Other,person202@example.test,0.0,sample city,52000,15-02-23,HR
+203,Example Person 003,abc,Other,invalid-email,0.0,,48000,10-03-23,IT
+204,Example Person 004,27,Other,person204@example.test,,Sample City,55000,10-04-23,Finance
+205,Example Person 005,-5,Other,person205@example.test,0.0,Sample City,-30000,01-05-23,
