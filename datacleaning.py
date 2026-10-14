@@ -10,3 +10,5 @@ df.drop_duplicates(inplace=True)
 print("_________drop duplicate_______")
 print(df)
 df.to_csv('customer_cleandata.csv', index=False)
+
+

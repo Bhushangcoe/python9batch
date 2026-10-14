@@ -1,0 +1,29 @@
+,Customer_ID,Name,Age,Gender,Email,Phone,City,Salary,Joining_Date,Department
+0,101, Rahul Sharma ,25.0,Male,rahul@gmail.com,9876543210.0,Pune,45000.0,15-01-23,IT
+1,102,Priya Patil,30.0,Female,priya@gmail.com,9876543211.0,pune,52000.0,15-02-23,HR
+2,103,Amit Shah,28.0,Male,amit@gmail.com,,,48000.0,10-03-23,IT
+3,104, Sneha Joshi,27.0,Female,sneha@gmail.com,9876543213.0,Mumbai ,55000.0,10-04-23,Finance
+4,105,Rohit Kumar,30.0,Male,rohit@gmail.com,9876543214.0,Delhi,53916.666666666664,20-05-23,
+5,106,Neha Singh,24.0,Female,,9876543215.0,Delhi,47000.0,01-06-23,HR
+6,107,RAHUL SHARMA,25.0,Male,rahul@gmail.com,9876543210.0,,45000.0,15-01-23,IT
+7,108,Anjali Mehta,29.0,Female,anjali@gmail,9876543217.0,Pune,60000.0,12-07-23,Finance
+8,109,Vikash Verma,31.0,Male,vikash@gmail.com,9876543218.0,MUMBAI,70000.0,05-08-23,IT
+9,110,Pooja Desai,26.0,Female,pooja@gmail.com,,pune,52000.0,15-09-23,HR
+10,111,  Karan Malhotra,35.0,Male,karan@gmail.com,9876543220.0, Delhi,80000.0,01-10-23,Management
+11,112,Meena Joshi,34.111111111111114,Female,meena@gmail.com,9876543221.0,Pune,49000.0,10-11-23,HR
+12,113,Suresh Patil,40.0,Male,suresh@gmail.com,9876543222.0,Pune,90000.0,01-12-23,
+13,114,Riya Kapoor,23.0,Female,riya@gmail.com,9876543223.0,Mumbai,51000.0,01-01-24,Finance
+14,115,Arjun Rao,27.0,Male,arjun@gmail.com,9876543224.0,,58000.0,15-02-24,IT
+15,116,Priya  Patil,23.0,Female,priya@gmail.com,9876543211.0,Pune,52000.0,15-02-23,HR
+16,117,Sameer Khan,30.0,Male,sameer@gmail.com,9876543226.0,Delhi,65000.0,20-03-24,IT
+17,118,Divya Nair,30.0,Female,divya@gmail.com,9876543227.0,,54000.0,10-04-24,HR
+18,119,Raj Gupta,45.0,Male,raj@gmail.com,9876543228.0,Mumbai,53916.666666666664,01-05-24,Management
+19,120, Ananya Rao ,28.0,Female,ananya@gmail.com,9876543229.0,PUNE,62000.0,15-06-24,Finance
+20,121,Manish Yadav,29.0,Male,manish@gmail.com,9876543230.0,Delhi,53916.666666666664,01-07-24,
+21,122,Kavita Joshi,26.0,Female,kavita@gmail.com,9876543231.0,Mumbai,57000.0,10-08-24,HR
+22,123,Deepak Singh,150.0,Male,deepak@gmail.com,9876543232.0,Pune,61000.0,05-09-24,IT
+23,124,Sunita Rao,32.0,Female,,9876543233.0,Delhi,59000.0,12-10-24,Finance
+24,125,Akash Jain,24.0,Male,akash@gmail.com,9876543234.0,Pune,53916.666666666664,20-11-24,IT
+25,118,Divya Nair,30.0,Female,divya@gmail.com,9876543227.0,Pune,54000.0,10-04-24,HR
+26,119,Raj Gupta,45.0,Male,raj@gmail.com,9876543228.0,Mumbai,90000.0,01-05-24,Management
+27,121,Manish Yadav,29.0,Male,manish@gmail.com,9876543230.0,Delhi,58000.0,01-07-24,IT
