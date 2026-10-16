@@ -115,12 +115,56 @@ These files are for learning Python basics and exception handling.
 
 ---
 
-## 7. Setup Instructions
+## 7. New File Added: Data Visualization Example
+
+A new example file has been added to the project to show basic data analysis and visualization using pandas and matplotlib.
+
+### `pandas_data_visualization.py`
+- Creates an employee dataset using a Python dictionary.
+- Converts the data into a pandas DataFrame.
+- Calculates the average salary.
+- Filters employees earning above a threshold.
+- Groups salary values by department.
+- Draws a bar chart using `matplotlib`.
+
+### Example code
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {
+    "Name": ["Bhushan", "Sneha", "Raj"],
+    "Department": ["IT", "HR", "Finance"],
+    "Salary": [45000, 52000, 48000],
+}
+
+df = pd.DataFrame(data)
+print(df)
+print(df["Salary"].mean())
+
+result = df[df["Salary"] >= 50000]
+print(result)
+
+result.plot(kind="bar", title="Salary Comparison")
+plt.show()
+```
+
+This example is useful for learning:
+- DataFrames
+- Filtering rows
+- Grouping data by category
+- Calculating summary values
+- Plotting charts
+
+---
+
+## 8. Setup Instructions
 
 Install the required libraries:
 
 ```bash
-pip install mysql-connector-python reportlab pypdf numpy pandas
+pip install mysql-connector-python reportlab pypdf numpy pandas matplotlib
 ```
 
 Make sure:
@@ -130,7 +174,7 @@ Make sure:
 
 ---
 
-## 8. How to Run the Files
+## 9. How to Run the Files
 
 ### Run a database script
 ```bash
@@ -160,6 +204,7 @@ python firstpandas.py
 python readjsondata.py
 python datacleaning.py
 python handelmissingvalue.py
+python pandas_data_visualization.py
 ```
 
 ### Run a PDF script
@@ -172,7 +217,7 @@ python mergepdf.py
 
 ---
 
-## 9. Summary
+## 10. Summary
 
 This repository is a collection of beginner-level Python exercises that cover:
 - database connection
@@ -183,11 +228,12 @@ This repository is a collection of beginner-level Python exercises that cover:
 - PDF handling
 - exception handling
 - user-defined exceptions
+- data visualization with pandas and matplotlib
 
 The project is designed to help students practice Python in small, easy-to-understand examples.
 
 ---
 
-## 10. Important Note
+## 11. Important Note
 
 Some files are output files created after running programs, such as PDF files and CSV data. These files may change when you run the scripts again. So always check the code before executing it, especially for scripts that write or overwrite data.

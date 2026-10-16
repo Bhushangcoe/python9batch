@@ -2,7 +2,7 @@ eid,name,Gender,salary,department
 101,Kiyara,female,30000,Hr
 102,ram,male,50000,dev
 103,vishal,male,40000,testing
-eid,name,Gender,salary,department
+eid,name,Gender,50000,department
 107,priya,female,30000,Hr
 108,raj,male,50000,dev
 109,yash,male,40000,testing
